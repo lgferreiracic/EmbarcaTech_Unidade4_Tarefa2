@@ -252,6 +252,83 @@ void tocarParabens() {
     sleep_ms(200);
 }
 
+// Função para tocar Cai Cai Balão
+void tocarCaiCaiBalao() {
+    // Sol Sol Mi Mi
+    playSol(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+
+    // Sol Sol Mi Mi
+    playSol(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+
+    // Sol Lá Sol
+    playSol(300);
+    sleep_ms(200);
+    playLa(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+
+    // Fá Mi Ré
+    playFa(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+
+    // Ré Mi Fá
+    playRe(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+
+    // Ré Mi Fá
+    playRe(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+
+    // Sol Lá Sol
+    playSol(300);
+    sleep_ms(200);
+    playLa(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+
+    // Fá Mi Ré
+    playFa(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+
+    // Dó
+    playDo(600); // Última nota com maior duração
+    sleep_ms(200);
+}
+
+
+
 void tocarJingleBells(){
     //Mi * 6
     for(int i = 0; i < 3; i++){
@@ -538,6 +615,140 @@ void tocarPirulitoQueBateBate(){
     sleep_ms(400);
 }
 
+void tocar9Sinfonia() {
+    // Primeira parte: E E F G G F E D C C D E E D D
+    playMi(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+
+    // Segunda parte: E E F G G F E D C C D E D C C
+    playMi(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+
+    // Terceira parte: D D E C D E F E C D E F E D C D G
+    playRe(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+
+    // Quarta parte: E E F G G F E D C C D E D C C
+    playMi(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+    playSol(300);
+    sleep_ms(200);
+    playFa(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playMi(300);
+    sleep_ms(200);
+    playRe(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+    playDo(300);
+    sleep_ms(200);
+}
+
 void tocarMarioBrosTheme() {
     // Parte inicial
     playMi(200); 
@@ -597,7 +808,6 @@ void tocarMarioBrosTheme() {
     sleep_ms(100);
 }
 
-
 void printNomeMusica(char musica){
     switch (musica)
     {
@@ -608,7 +818,7 @@ void printNomeMusica(char musica){
         printf("Tocando a música Parabéns pra você\n");
         break;
     case '3':
-        printf("Tocando a música\n");
+        printf("Tocando a música Cai Cai Balão\n");
         break;
     case '4':
         printf("Tocando a música Brilha Brilha Estrelinha\n");
@@ -626,7 +836,7 @@ void printNomeMusica(char musica){
         printf("Tocando a música Pirulito que bate bate\n");
         break;
     case '9':
-        printf("Tocando a música\n");
+        printf("Tocando a música 9 Sinfonia\n");
         break;
     case '*':
         printf("Tocando a música Mario Bros");
@@ -637,23 +847,6 @@ void printNomeMusica(char musica){
 }
 
 // Função para ler o comando do terminal
-void ler_comando(char *comando, size_t tamanho) {
-    printf("Digite um comando: ");
-    memset(comando, 0, tamanho);  // Limpa o buffer do comando
-    size_t index = 0;
-    while (1) {
-        char c = getchar();  // Lê um caractere do terminal
-        if (c == '\r' || c == '\n') {
-            comando[index] = '\0';
-            break;
-        } else if (index < tamanho - 1) {
-            comando[index++] = c;  // Armazena o caractere no buffer de comando
-            putchar(c);  // Mostra o caractere digitado no terminal
-        }
-    }
-    printf("\n");
-}
-
 void processarComando(const char *comando) {
     if (strcmp(comando, "green") == 0) {
         gpio_put(GREEN_LED_PIN, 1);
@@ -684,15 +877,16 @@ void processarComando(const char *comando) {
         printNomeMusica('2');
         tocarParabens();
     }else if(strcmp(comando, "musica3") == 0){
-        
+        printNomeMusica('3');
+        tocarCaiCaiBalao();
     }
     else if(strcmp(comando, "musica4") == 0){
-        
+        // Brilha Brilha Estrelinha pode ser adicionada aqui
     }else if(strcmp(comando, "musica5") == 0){
         printNomeMusica('5');
         tocarJingleBells();
     }else if(strcmp(comando, "musica6") == 0){
-    
+        // Outra música pode ser adicionada aqui
     }else if(strcmp(comando, "musica7") == 0){
         printNomeMusica('7');
         tocarBorboletinha();
@@ -700,7 +894,8 @@ void processarComando(const char *comando) {
         printNomeMusica('8');
         tocarPirulitoQueBateBate();
     }else if(strcmp(comando, "musica9") == 0){
-        
+        printNomeMusica('9');
+        tocar9Sinfonia();
     }else if(strcmp(comando, "musica*") == 0){
         printNomeMusica('*');
         tocarMarioBrosTheme();
