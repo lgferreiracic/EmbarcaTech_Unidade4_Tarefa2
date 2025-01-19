@@ -718,6 +718,7 @@ void tocarNoiteFeliz(){
     playRe(400);
     sleep_ms(100);
     playDo(1000);
+}
 
 void tocar9Sinfonia() {
     // Primeira parte: E E F G G F E D C C D E E D D
@@ -910,6 +911,7 @@ void tocarMarioBrosTheme() {
     sleep_ms(100);
     playSi(200);
     sleep_ms(100);
+}
 
 void printNomeMusica(char musica){
     switch (musica)
@@ -947,6 +949,24 @@ void printNomeMusica(char musica){
     default:
         break;
     }
+}
+
+// Função para ler o comando do terminal
+void lerComando(char *comando, size_t tamanho) {
+    printf("Digite um comando: ");
+    memset(comando, 0, tamanho);  // Limpa o buffer do comando
+    size_t index = 0;
+    while (1) {
+        char c = getchar();  // Lê um caractere do terminal
+        if (c == '\r' || c == '\n') {
+            comando[index] = '\0';
+            break;
+        } else if (index < tamanho - 1) {
+            comando[index++] = c;  // Armazena o caractere no buffer de comando
+            putchar(c);  // Mostra o caractere digitado no terminal
+        }
+    }
+    printf("\n");
 }
 
 // Função para ler o comando do terminal
@@ -1021,7 +1041,7 @@ int main() {
     int index = 0; // Índice do buffer de comando
 
     while (1) {
-        ler_comando(comando, sizeof(comando));
+        lerComando(comando, sizeof(comando));
         printf("\nComando Detectado: %s\n", comando);
         processarComando(comando); 
     }
