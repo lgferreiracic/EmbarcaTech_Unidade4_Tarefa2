@@ -538,6 +538,112 @@ void tocarPirulitoQueBateBate(){
     sleep_ms(400);
 }
 
+void tocarNoiteFeliz(){
+    playSol(900);
+    sleep_ms(100);
+    playLa(500);
+    sleep_ms(100);
+    playSol(900);
+    sleep_ms(100);
+    playMi(1500);
+    sleep_ms(100);
+
+    playSol(900);
+    sleep_ms(100);
+    playLa(500);
+    sleep_ms(100);
+    playSol(900);
+    sleep_ms(100);
+    playMi(1500);
+    sleep_ms(100);
+
+    playRe(900);
+    sleep_ms(100);
+    playRe(700);
+    sleep_ms(100);
+    playSi(1000);
+    sleep_ms(100);
+
+    playDo(900);
+    sleep_ms(100);
+    playDo(700);
+    sleep_ms(100);
+    playSol(1000);
+    sleep_ms(100);
+
+    playLa(900);
+    sleep_ms(100);
+    playLa(700);
+    sleep_ms(100);
+    playDo(700);
+    sleep_ms(100);
+    playSi(400);
+    sleep_ms(100);
+    playLa(300);
+    sleep_ms(100);
+    playSol(300);
+    sleep_ms(100);
+    playLa(200);
+    sleep_ms(100);
+
+    playSol(800);
+    sleep_ms(100);
+    playMi(1000);
+    sleep_ms(100);
+
+    playLa(800);
+    sleep_ms(100);
+    playLa(500);
+    sleep_ms(100);
+    playDo(500);
+    sleep_ms(100);
+
+    playSi(200);
+    sleep_ms(100);
+    playLa(400);
+    sleep_ms(100);
+    playSol(600);
+    sleep_ms(100);
+
+    playLa(200);
+    sleep_ms(100);
+    playSol(400);
+    sleep_ms(100);
+    playMi(1000);
+    sleep_ms(100);
+
+    playRe(700);
+    sleep_ms(100);
+    playRe(300);
+    sleep_ms(100);
+    playFa(600);
+    sleep_ms(100);
+
+    playRe(200);
+    sleep_ms(100);
+    playSi(400);
+    sleep_ms(100);
+    playDo(1000);
+    sleep_ms(100);
+    playMi(1000);
+    sleep_ms(100);
+
+    playDo(600);
+    sleep_ms(100);
+    playSol(200);
+    sleep_ms(100);
+    playMi(400);
+    sleep_ms(100);
+    playSol(600);
+    sleep_ms(100);
+    playFa(200);
+    sleep_ms(100);
+    playRe(400);
+    sleep_ms(100);
+    playDo(1000);
+
+}
+
 void printNomeMusica(char musica){
     switch (musica)
     {
@@ -557,7 +663,7 @@ void printNomeMusica(char musica){
         printf("Tocando a música Jingle Bells\n");
         break;
     case '6':
-        printf("Tocando a música\n");
+        printf("Tocando a música Noite Feliz\n");
         break;
     case '7':
         printf("Tocando a música Borboletinha\n");
@@ -629,7 +735,8 @@ void processarComando(const char *comando) {
         printNomeMusica('5');
         tocarJingleBells();
     }else if(strcmp(comando, "musica6") == 0){
-    
+        printNomeMusica('6');
+        tocarNoiteFeliz();
     }else if(strcmp(comando, "musica7") == 0){
         printNomeMusica('7');
         tocarBorboletinha();
