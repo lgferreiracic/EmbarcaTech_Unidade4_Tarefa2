@@ -83,7 +83,7 @@ Clique na imagem
 
 ## Vídeo da Solução
 
-Assista ao vídeo ensaio que demonstra a solução trabalhada e os resultados obtidos nos experimentos:
+Clique na imagem abaixo para assistir ao vídeo que demonstra a solução trabalhada e os resultados obtidos nos experimentos:
 
 <p align="center">
   <a href="https://www.dropbox.com/scl/fi/fc8bx0rcy485shpfy8b4a/Subgrupo-1-Tarefa-2.mp4?rlkey=q38gt0ars4yzwmjfbmn9nxzd8&st=oxsiqhmb&dl=0">
