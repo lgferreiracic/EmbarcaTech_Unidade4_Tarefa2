@@ -86,8 +86,8 @@ Clique na imagem
 Assista ao vídeo ensaio que demonstra a solução trabalhada e os resultados obtidos nos experimentos:
 
 <p align="center">
-  <a href="">
-    <img src="thumb-video.png" alt="Vídeo da Solução" width="300">
+  <a href="https://www.dropbox.com/scl/fi/fc8bx0rcy485shpfy8b4a/Subgrupo-1-Tarefa-2.mp4?rlkey=q38gt0ars4yzwmjfbmn9nxzd8&st=oxsiqhmb&dl=0">
+    <img src="Video.png" alt="Vídeo demonstrativo" width="900">
   </a>
 </p>
 
