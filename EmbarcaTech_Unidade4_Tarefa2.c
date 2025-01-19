@@ -538,6 +538,66 @@ void tocarPirulitoQueBateBate(){
     sleep_ms(400);
 }
 
+void tocarMarioBrosTheme() {
+    // Parte inicial
+    playMi(200); 
+    sleep_ms(100);
+    playMi(200); 
+    sleep_ms(100);
+    sleep_ms(100);
+    playMi(200);
+    sleep_ms(100);
+    sleep_ms(100);
+    playDo(200);
+    sleep_ms(100);
+    playMi(200);
+    sleep_ms(100);
+    sleep_ms(100);
+    playSol(400); 
+    sleep_ms(300);
+    playDo(400);
+    sleep_ms(300);
+
+    // Continuação
+    playDo(200);
+    sleep_ms(100);
+    playSol(200);
+    sleep_ms(100);
+    playMi(200);
+    sleep_ms(100);
+    playLa(200); 
+    sleep_ms(100);
+    playSi(200); 
+    sleep_ms(100);
+    playLa(200);
+    sleep_ms(100);
+    playSol(200);
+    sleep_ms(100);
+    playMi(150);
+    sleep_ms(100);
+    playSol(150);
+    sleep_ms(100);
+    playLa(150);
+    sleep_ms(100);
+    playSi(200);
+    sleep_ms(100);
+
+    // Parte final
+    playFa(150); 
+    sleep_ms(100);
+    playSol(150);
+    sleep_ms(100);
+    playMi(200);
+    sleep_ms(100);
+    playDo(200);
+    sleep_ms(100);
+    playRe(200); 
+    sleep_ms(100);
+    playSi(200);
+    sleep_ms(100);
+}
+
+
 void printNomeMusica(char musica){
     switch (musica)
     {
@@ -567,6 +627,9 @@ void printNomeMusica(char musica){
         break;
     case '9':
         printf("Tocando a música\n");
+        break;
+    case '*':
+        printf("Tocando a música Mario Bros");
         break;
     default:
         break;
@@ -638,6 +701,9 @@ void processarComando(const char *comando) {
         tocarPirulitoQueBateBate();
     }else if(strcmp(comando, "musica9") == 0){
         
+    }else if(strcmp(comando, "musica*") == 0){
+        printNomeMusica('*');
+        tocarMarioBrosTheme();
     }else if (strcmp(comando, "sair") == 0) {
         printf("Reiniciando o sistema...\n");
         reset_usb_boot(0, 0);  // Reinicia o microcontrolador
