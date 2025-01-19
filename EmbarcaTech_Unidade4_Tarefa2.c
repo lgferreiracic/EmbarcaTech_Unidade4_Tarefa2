@@ -913,6 +913,83 @@ void tocarMarioBrosTheme() {
     sleep_ms(100);
 }
 
+void tocarBrilhaBrilha(){
+      playDo(500); 
+    sleep_ms(100);
+    playDo(500); 
+    sleep_ms(100);
+    playSol(500); 
+    sleep_ms(100);
+    playSol(500); 
+    sleep_ms(100);
+    playLa(500); 
+    sleep_ms(100);
+    playLa(500); 
+    sleep_ms(100);
+    playSol(500); 
+    sleep_ms(100);
+
+    playFa(500); 
+    sleep_ms(100);
+    playFa(500); 
+    sleep_ms(100);
+    playMi(500); 
+    sleep_ms(100);
+    playMi(500); 
+    sleep_ms(100);
+    playRe(500); 
+    sleep_ms(100);
+    playRe(500); 
+    sleep_ms(100);
+    playDo(500); 
+    sleep_ms(100);
+
+    playSol(500); 
+    sleep_ms(100);
+    playSol(500); 
+    sleep_ms(100);
+    playFa(500); 
+    sleep_ms(100);
+    playFa(500); 
+    sleep_ms(100);
+    playMi(500); 
+    sleep_ms(100);
+    playMi(500); 
+    sleep_ms(100);
+    playRe(500); 
+    sleep_ms(100);
+
+    playSol(500); 
+    sleep_ms(100);
+    playSol(500); 
+    sleep_ms(100);
+    playFa(500); 
+    sleep_ms(100);
+    playFa(500); 
+    sleep_ms(100);
+    playMi(500); 
+    sleep_ms(100);
+    playMi(500); 
+    sleep_ms(100);
+    playRe(500); 
+    sleep_ms(100);
+
+    playDo(500); 
+    sleep_ms(100);
+    playDo(500); 
+    sleep_ms(100);
+    playSol(500); 
+    sleep_ms(100);
+    playSol(500); 
+    sleep_ms(100);
+    playLa(500); 
+    sleep_ms(100);
+    playLa(500); 
+    sleep_ms(100);
+    playSol(500); 
+    sleep_ms(100);
+}
+
 void printNomeMusica(char musica){
     switch (musica)
     {
@@ -1004,7 +1081,8 @@ void processarComando(const char *comando) {
         tocarCaiCaiBalao();
     }
     else if(strcmp(comando, "musica4") == 0){
-        // Brilha Brilha Estrelinha pode ser adicionada aqui
+        printNomeMusica('4');
+        tocarBrilhaBrilha();
     }else if(strcmp(comando, "musica5") == 0){
         printNomeMusica('5');
         tocarJingleBells();
