@@ -83,12 +83,14 @@ void playRe(uint duration_ms) {
     gpio_put(BLUE_LED_PIN, 0); // Apaga LED azul
 }
 
+// Função para tocar a nota Mi
 void playMi(uint duration_ms){
     gpio_put(RED_LED_PIN, 1); //Acende LED vermelho
     play_buzzer(BUZZER_PIN,MI,duration_ms);
     gpio_put(RED_LED_PIN, 0); //Apaga LED vermelho
 }
 
+// Função para tocar a nota Fá
 void playFa(uint duration_ms){
     gpio_put(GREEN_LED_PIN, 1); // Acende LED verde
     gpio_put(BLUE_LED_PIN, 1); // Acende LED azul
@@ -97,6 +99,7 @@ void playFa(uint duration_ms){
     gpio_put(BLUE_LED_PIN, 0); // Apaga LED azul
 }
 
+// Função para tocar a nota Sol
 void playSol(uint duration_ms) {
     gpio_put(GREEN_LED_PIN, 1); // Acende LED verde
     gpio_put(RED_LED_PIN, 1); //Acende LED vermelho
@@ -105,6 +108,7 @@ void playSol(uint duration_ms) {
     gpio_put(RED_LED_PIN, 0); //Apaga LED vermelho
 }
 
+// Função para tocar a nota Lá
 void playLa(uint duration_ms) {
     gpio_put(BLUE_LED_PIN, 1); // Acende LED azul
     gpio_put(RED_LED_PIN, 1); //Acende LED vermelho
@@ -113,6 +117,7 @@ void playLa(uint duration_ms) {
     gpio_put(RED_LED_PIN, 0); //Apaga LED vermelho
 }
 
+// Função para tocar a nota Si
 void playSi(uint duration_ms) {
     gpio_put(GREEN_LED_PIN, 1); // Acende LED verde
     gpio_put(BLUE_LED_PIN, 1); // Acende LED azul
@@ -123,6 +128,7 @@ void playSi(uint duration_ms) {
     gpio_put(RED_LED_PIN, 0); //Apaga LED vermelho
 }
 
+// Função para tocar a música Do Ré Mi
 void tocarDoReMi(){
     //Dó-Ré-Mi-Fá
     playDo(300);
@@ -190,6 +196,7 @@ void tocarDoReMi(){
     sleep_ms(300);
 }
 
+// Função para tocar Parabéns pra você
 void tocarParabens() {
     //DO-DO-RE-DO-SOL-FA-FA
     playDo(300);
@@ -328,7 +335,7 @@ void tocarCaiCaiBalao() {
 }
 
 
-
+// Função para tocar Jingle Bells
 void tocarJingleBells(){
     //Mi * 6
     for(int i = 0; i < 3; i++){
@@ -437,6 +444,7 @@ void tocarJingleBells(){
     sleep_ms(400);
 }
 
+// Função para tocar Borboletinha
 void tocarBorboletinha(){
     //Sol-La-Sol-Do-Do
     playSol(300);
@@ -541,6 +549,7 @@ void tocarBorboletinha(){
     sleep_ms(400);
 }
 
+// Função para tocar Pirulito que bate bate
 void tocarPirulitoQueBateBate(){
     //Fa-Sol-La-La-La-Sol-Fa-Si-Si
     playFa(200);
@@ -615,6 +624,7 @@ void tocarPirulitoQueBateBate(){
     sleep_ms(400);
 }
 
+// Função para tocar Noite Feliz
 void tocarNoiteFeliz(){
     playSol(900);
     sleep_ms(100);
@@ -720,6 +730,7 @@ void tocarNoiteFeliz(){
     playDo(1000);
 }
 
+// Função para tocar a 9ª Sinfonia de Beethoven
 void tocar9Sinfonia() {
     // Primeira parte: E E F G G F E D C C D E E D D
     playMi(300);
@@ -854,6 +865,7 @@ void tocar9Sinfonia() {
     sleep_ms(200);
 }
 
+// Função para tocar o tema do Mario Bros
 void tocarMarioBrosTheme() {
     // Parte inicial
     playMi(200); 
@@ -913,6 +925,7 @@ void tocarMarioBrosTheme() {
     sleep_ms(100);
 }
 
+// Função para tocar Brilha Brilha Estrelinha
 void tocarBrilhaBrilha(){
       playDo(500); 
     sleep_ms(100);
@@ -990,6 +1003,7 @@ void tocarBrilhaBrilha(){
     sleep_ms(100);
 }
 
+// Função para imprimir o nome da música
 void printNomeMusica(char musica){
     switch (musica)
     {
@@ -1021,7 +1035,7 @@ void printNomeMusica(char musica){
         printf("Tocando a música 9 Sinfonia\n");
         break;
     case '*':
-        printf("Tocando a música Mario Bros");
+        printf("Tocando a música tema do Mario Bros\n");
         break;
     default:
         break;
@@ -1114,6 +1128,13 @@ int main() {
     init_leds_and_buzzer();
 
     printf("Bem-vindo! Controle os LEDs e o buzzer da BitDogLab pelo terminal.\n");
+    printf("Digite 'green', 'blue' ou 'red' para acender um LED.\n");
+    printf("Digite 'white' para acender todos os LEDs.\n");
+    printf("Digite 'desligar' para apagar todos os LEDs.\n");
+    printf("Digite 'buzzer' para tocar o buzzer.\n");
+    printf("Digite 'musicaX' para tocar uma música.\n");
+    printf("Onde X pode ser um número de 1-9 ou '*'.\n");
+    printf("Digite 'sair' para reiniciar o sistema.\n");
 
     char comando[25];  // Variável para armazenar o comando
     int index = 0; // Índice do buffer de comando
